@@ -163,7 +163,9 @@ add_subdirectory (glabels)
 add_subdirectory (glabels-batch)
 add_subdirectory (templates)
 add_subdirectory (user-docs)
+if (NOT CMAKE_CROSSCOMPILING)
 add_subdirectory (translations)
+endif (NOT CMAKE_CROSSCOMPILING)
 add_subdirectory (data)
 
 
